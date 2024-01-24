@@ -12,8 +12,8 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    @include('layouts.navigation');
+    @include('layouts.navigation')
 
-    @yield('content'); {{--dynamic form content--}}
+    @yield('content') {{--dynamic form content--}}
 </body>
 </html> 

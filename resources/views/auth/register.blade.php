@@ -10,8 +10,8 @@
                 <div class="card mt-3 p-3">
                     <h1>Register</h1>
 
-                    @if (session::has('error'))
-                        <p class="text-danger">{{ session::get('error') }}</p>
+                    @if (Session::has('error'))
+                        <p class="text-danger">{{ Session::get('error') }}</p>
                     @endif
 
                     <form method="POST" action="{{route('register')}}" enctype="multipart/form-data">

@@ -10,11 +10,11 @@
                 <div class="card mt-3 p-3">
                     <h1>Login</h1>
 
-                    @if (session::has('error'))
-                        <p class="text-danger">{{ session::get('error') }}</p>
+                    @if (Session::has('error'))
+                        <p class="text-danger">{{ Session::get('error') }}</p>
                     @endif
-                    @if (session::has('success'))
-                    <p class="text-success">{{ session::get('success') }}</p>
+                    @if (Session::has('success'))
+                    <p class="text-success">{{ Session::get('success') }}</p>
                     @endif
 
                     <form method="POST" action="{{route('login')}}" enctype="multipart/form-data">
